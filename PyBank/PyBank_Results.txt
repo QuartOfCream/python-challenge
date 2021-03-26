@@ -1,0 +1,9 @@
+86
+38382578
+446309
+Date             Sep-2016
+Profit/Losses     1170593
+dtype: object
+Date             Apr-2010
+Profit/Losses    -1196225
+dtype: object
