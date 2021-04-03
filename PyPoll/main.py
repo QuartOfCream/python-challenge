@@ -6,8 +6,6 @@ import sys
 
 csv_file = "election_data.csv"
 election_df = pd.read_csv(csv_file)
-    
-sys.stdout = open("PyPoll_Results.txt", "w")
 
 total_votes = len(election_df["Voter ID"].unique())
 
@@ -41,4 +39,11 @@ print("O'Tooley", otooley, otooley_percent)
 
 print("Winner: Khan")
     
-sys.stdout.close()
+with open('pypoll_results_file.txt', 'w') as text:
+    text.write("Election Results\n")
+    text.write("Total Vote: " + str(total_votes) + "\n")
+    text.write("Khan" + ": " + str(khan_percent) +"% (" + str(khan) + ")""\n")
+    text.write("Correy" + ": " + str(correy_percent) +"% (" + str(correy) + ")""\n")
+    text.write("Li" + ": " + str(li_percent) +"% (" + str(li) + ")""\n")
+    text.write("O'Tooley" + ": " + str(otooley_percent) +"% (" + str(otooley) + ")""\n")
+    text.write("The winner is: Khan \n")
