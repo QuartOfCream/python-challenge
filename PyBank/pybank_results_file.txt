@@ -1,0 +1,11 @@
+Election Results
+Total Months: 86
+Total Profits/Losses38382578
+Average Change: 446309$
+Greatest: Date             Sep-2016
+Profit/Losses     1170593
+dtype: object$
+Least: Date             Apr-2010
+Profit/Losses    -1196225
+dtype: object$
+------------------------------------- 
